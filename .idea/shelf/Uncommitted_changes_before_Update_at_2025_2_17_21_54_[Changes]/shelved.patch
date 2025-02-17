@@ -1,0 +1,97 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision affb0f36d3be9c06515d46f7288b6b70a6b0602a)
++++ /dev/null	(revision affb0f36d3be9c06515d46f7288b6b70a6b0602a)
+@@ -1,89 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ChangeListManager">
+-    <list default="true" id="7a07e4bb-9ee8-44aa-9fa9-ebe2fb2af4fd" name="Changes" comment="RippleNet source code" />
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+-    <envs>
+-      <env key="FLASK_APP" value="app" />
+-    </envs>
+-    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+-    <option name="myEnvs">
+-      <map>
+-        <entry key="FLASK_APP" value="app" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="MarkdownSettingsMigration">
+-    <option name="stateVersion" value="1" />
+-  </component>
+-  <component name="ProjectId" id="2t92MDARvstcowLHdudxfj9CxXf" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent">
+-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+-    <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../" />
+-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+-    <property name="vue.rearranger.settings.migration" value="true" />
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="SvnConfiguration">
+-    <configuration>C:\Users\wyc\AppData\Roaming\Subversion</configuration>
+-  </component>
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="7a07e4bb-9ee8-44aa-9fa9-ebe2fb2af4fd" name="Changes" comment="" />
+-      <created>1739749920284</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1739749920284</updated>
+-      <workItem from="1739749922140" duration="112000" />
+-      <workItem from="1739750059582" duration="301000" />
+-      <workItem from="1739750370118" duration="179000" />
+-      <workItem from="1739750568659" duration="346000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="RippleNet source code">
+-      <created>1739750762109</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1739750762109</updated>
+-    </task>
+-    <option name="localTasksCounter" value="2" />
+-    <servers />
+-  </component>
+-  <component name="TypeScriptGeneratedFilesManager">
+-    <option name="version" value="3" />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <ignored-roots>
+-      <path value="$PROJECT_DIR$/../" />
+-    </ignored-roots>
+-    <MESSAGE value="initial" />
+-    <MESSAGE value="RippleNet source code" />
+-    <option name="LAST_COMMIT_MESSAGE" value="RippleNet source code" />
+-  </component>
+-</project>
+\ No newline at end of file
