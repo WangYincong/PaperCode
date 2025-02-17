@@ -3,7 +3,7 @@ import numpy as np
 from data_loader import load_data
 from train import train
 
-np.random.seed(555)
+np.random.seed(555)  # 保证其他人可以用和我自己一样的数据去验证
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', type=str, default='movie', help='which dataset to use')
