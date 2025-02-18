@@ -25,13 +25,17 @@ def convert_rating():
     file = '../data/' + DATASET + '/' + RATING_FILE_NAME[DATASET]
 
     print('reading rating file ...')
+    print('reading rating file ...')
     item_set = set(item_index_old2new.values())
     user_pos_ratings = dict()
     user_neg_ratings = dict()
 
     for line in open(file, encoding='utf-8').readlines()[1:]:
+        # print(line)
+        # print(SEP[DATASET])
         array = line.strip().split(SEP[DATASET])
-
+        # print(array)
+        # break
         # remove prefix and suffix quotation marks for BX dataset
         if DATASET == 'book':
             array = list(map(lambda x: x[1:-1], array))
@@ -132,9 +136,9 @@ if __name__ == '__main__':
 
     read_item_index_to_entity_id_file()
 
-    print(entity_id2index)
-    print(relation_id2index)
-    print(item_index_old2new)
+    # print(entity_id2index)
+    # print(relation_id2index)
+    # print(item_index_old2new)
 
     convert_rating()
     convert_kg()
