@@ -9,7 +9,7 @@ def load_data(args):
     ripple_set = get_ripple_set(args, kg, user_history_dict)
     return train_data, eval_data, test_data, n_entity, n_relation, ripple_set
 
-
+# 把ratings_final.txt内的数据转为了一个数组
 def load_rating(args):
     print('reading rating file ...')
 

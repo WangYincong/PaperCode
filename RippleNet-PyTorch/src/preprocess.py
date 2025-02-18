@@ -1,3 +1,6 @@
+# ratings.dat  用户id, 电影id, 评分, 时间戳
+
+
 import argparse
 import numpy as np
 
@@ -128,6 +131,11 @@ if __name__ == '__main__':
     item_index_old2new = dict()
 
     read_item_index_to_entity_id_file()
+
+    print(entity_id2index)
+    print(relation_id2index)
+    print(item_index_old2new)
+
     convert_rating()
     convert_kg()
 
