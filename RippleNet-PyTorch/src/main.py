@@ -5,7 +5,7 @@ from train import train
 
 np.random.seed(555)  # 保证其他人可以用和我自己一样的数据去验证
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser()  # 创建一个命令行参数解析器，用于从终端获取用户输入的参数，使 Python 脚本可以接受不同的参数配置，而无需修改代码
 parser.add_argument('--dataset', type=str, default='movie', help='which dataset to use')
 parser.add_argument('--dim', type=int, default=16, help='dimension of entity and relation embeddings')
 parser.add_argument('--n_hop', type=int, default=2, help='maximum hops')
@@ -23,7 +23,10 @@ parser.add_argument('--using_all_hops', type=bool, default=True,
 
 
 parser.add_argument('--use_cuda', type=bool, default=True, help='whether to use gpu')
-args = parser.parse_args()
+
+# 当调用 parser.parse_args() 方法时，argparse 会解析命令行中的参数，并将这些参数以命名空间对象的形式存储在 args 变量中。
+# 这种设计使得访问命令行参数更加方便，你可以通过点运算符（.）来访问命名空间中的参数。
+args = parser.parse_args()# args的类型是一个命名空间（namespace）。
 
 show_loss = False
 data_info = load_data(args)
