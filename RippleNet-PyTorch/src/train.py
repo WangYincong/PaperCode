@@ -5,6 +5,7 @@ from model import RippleNet
 
 
 def train(args, data_info, show_loss):
+    print(data_info)
     train_data = data_info[0]
     eval_data = data_info[1]
     test_data = data_info[2]
