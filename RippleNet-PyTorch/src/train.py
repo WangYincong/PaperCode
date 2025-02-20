@@ -5,7 +5,7 @@ from model import RippleNet
 
 
 def train(args, data_info, show_loss):
-    print(data_info)
+    # print(data_info)
     train_data = data_info[0]
     eval_data = data_info[1]
     test_data = data_info[2]
@@ -17,7 +17,17 @@ def train(args, data_info, show_loss):
 
     if args.use_cuda:
         model.cuda()  # 在pytorch中，即使是有GPU的机器，它也不会自动使用GPU，而是需要在程序中显示指定。调用model.cuda()，可以将模型加载到GPU上去。
-    该这里optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),args.lr,)
+
+    # print("model")
+    # print(model)
+
+    # 查看模型参数中requires_grad是true还是false，但实际输出中并没有看到requires_grad
+    # for name, param in model.named_parameters():
+    #     print(f'{name}: {param.requires_grad}')
+
+    # 只优化模型中 requires_grad=True 的参数，且使用 Adam 优化器，学习率由 args.lr 指定
+    optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),args.lr,)
+    print(optimizer)
 
     for step in range(args.n_epoch):
         # training
