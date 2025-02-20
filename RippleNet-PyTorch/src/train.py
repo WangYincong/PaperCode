@@ -14,12 +14,10 @@ def train(args, data_info, show_loss):
     ripple_set = data_info[5]
 
     model = RippleNet(args, n_entity, n_relation)
+
     if args.use_cuda:
-        model.cuda()
-    optimizer = torch.optim.Adam(
-        filter(lambda p: p.requires_grad, model.parameters()),
-        args.lr,
-    )
+        model.cuda()  # 在pytorch中，即使是有GPU的机器，它也不会自动使用GPU，而是需要在程序中显示指定。调用model.cuda()，可以将模型加载到GPU上去。
+    该这里optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),args.lr,)
 
     for step in range(args.n_epoch):
         # training

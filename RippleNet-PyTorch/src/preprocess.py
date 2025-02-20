@@ -1,6 +1,6 @@
 # ratings.dat  用户id, 电影id, 评分, 时间戳
 # item_index2entity_id_rehashed.txt：ratings文件中的item在KG中对应的entity。
-
+# kg_part1_rehashed.txt、kg_part2_rehashed.txt:详细解答见https://github.com/hwwang55/RippleNet/issues/17
 import argparse
 import numpy as np
 
@@ -96,7 +96,7 @@ def convert_kg():
     writer = open('../data/' + DATASET + '/kg_final.txt', 'w', encoding='utf-8')
 
     files = []
-    该这里
+
     if DATASET == 'movie':
         files.append(open('../data/' + DATASET + '/kg_part1_rehashed.txt', encoding='utf-8'))
         files.append(open('../data/' + DATASET + '/kg_part2_rehashed.txt', encoding='utf-8'))
