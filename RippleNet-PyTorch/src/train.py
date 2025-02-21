@@ -27,13 +27,15 @@ def train(args, data_info, show_loss):
 
     # 只优化模型中 requires_grad=True 的参数，且使用 Adam 优化器，学习率由 args.lr 指定
     optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()),args.lr,)
-    print(optimizer)
+    # print(optimizer)
 
     for step in range(args.n_epoch):
         # training
         np.random.shuffle(train_data) # 打破数据的顺序，防止模型在训练过程中依赖于数据的顺序
         start = 0
-        //该这里
+        print(train_data)
+        print(train_data.shape[0])
+        print(train_data.shape[1])
         while start < train_data.shape[0]:
             return_dict = model(*get_feed_dict(args, model, train_data, ripple_set, start, start + args.batch_size))
             loss = return_dict["loss"]
