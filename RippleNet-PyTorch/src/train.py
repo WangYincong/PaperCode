@@ -31,8 +31,9 @@ def train(args, data_info, show_loss):
 
     for step in range(args.n_epoch):
         # training
-        np.random.shuffle(train_data)
+        np.random.shuffle(train_data) # 打破数据的顺序，防止模型在训练过程中依赖于数据的顺序
         start = 0
+        //该这里
         while start < train_data.shape[0]:
             return_dict = model(*get_feed_dict(args, model, train_data, ripple_set, start, start + args.batch_size))
             loss = return_dict["loss"]
